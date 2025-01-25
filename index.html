@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Fashion</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
@@ -28,31 +30,42 @@
 </head>
 
 <body>
-    <header class="px-32 pt-15 pb-32 bg-[#FFFBF0]">
-        <nav class="flex items-center justify-between">
-            <div>
-                <img class="w-50 h-12" src="./icons/logo.png" alt="logo">
+    <header class="pb-18 sm:px-20 sm:pt-10 sm:pb-32 bg-[#FFFBF0]">
+        <nav class="flex flex-col justify-between sm:flex sm:flex-row sm:items-center sm:justify-between">
+            <div class="flex justify-between items-center px-7 pt-5 mb-12">
+                <div>
+                    <img class="w-50 h-12" src="./icons/logo.png" alt="logo">
+                </div>
+                <div class="text-2xl sm:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
-            <div>
-                <ul class="flex decoration-none items-center roboto font-bold">
-                    <li class="mr-14"><a href="#">Home</a></li>
-                    <li class="mr-14"><a href="#">Product</a></li>
-                    <li class="mr-14"><a href="#">Contact Us</a></li>
-                    <li class="mr-14"><a href="#">About Us</a></li>
+            <div class="hidden sm:block">
+                <ul class="sm:flex sm:decoration-none sm:items-center sm:roboto font-bold">
+                    <li class="sm:mr-14"><a href="#">Home</a></li>
+                    <li class="sm:mr-14"><a href="#">Product</a></li>
+                    <li class="sm:mr-14"><a href="#">Contact Us</a></li>
+                    <li class="sm:mr-14"><a href="#">About Us</a></li>
                 </ul>
             </div>
         </nav>
-        <section  class="flex items-center justify-between">
-            <div class="max-w-104">
-                <h1 class="capitalize text-7xl bebas-neue"><span class="text-orange-400">Be the Penguins </span> of Winter</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, distinctio dolor provident illo a enim?</p>
-                <button class="mt-5 py-3 px-8 roboto bg-lime-600 rounded-xl text-white hover:bg-sky-700"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button>
+        <section class="flex flex-col items-center justify-between px-7 pt-7 mb-12 sm:flex sm:flex-row sm:items-center sm:justify-between">
+            <div class="max-w-90 sm:">
+                <h1 class="capitalize text-5xl bebas-neue leading-16 sm:text-6xl"><span class="text-orange-400 ">Be the Penguins <br></span> of
+                    Winter</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, distinctio dolor provident illo a enim?
+                </p>
+                <button class="mt-7 mb-20 py-3 px-7 roboto bg-lime-600 rounded-xl text-white hover:bg-sky-700"><i
+                        class="fa-solid fa-cart-shopping"></i> Buy Now</button>
             </div>
-            <div>
+            <div sm:ml-30>
                 <img class="mr-34" src="./images/model.png" alt="model">
             </div>
         </section>
     </header>
+    <main>
+
+    </main>
 </body>
 
 </html>
